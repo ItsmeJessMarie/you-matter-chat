@@ -1,0 +1,119 @@
+:root {
+  --branding-color: #7641ab;
+  --secondary-color: #ffffff;
+  --tertiary-color: #ff4040;
+  --font-family: "Barlow", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background: rgba(118, 65, 171, 0.6);
+  margin: 145px 0 0;
+}
+
+h1 {
+  color: var(--branding-color);
+  font-size: 56px;
+}
+
+p {
+  margin: 0;
+}
+
+.navbar-nav .nav-link.active,
+.nav-link:hover {
+  color: var(--branding-color);
+}
+
+.content-container {
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+  width: 75%;
+}
+
+.navbar {
+  background-color: var(--secondary-color);
+  margin: 0;
+  padding: 10px 30px;
+}
+
+.nav-item {
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: right;
+}
+
+.logo {
+  margin: 10px;
+}
+
+.warning {
+  background: #edebeb;
+}
+
+.warning-text {
+  color: var(--tertiary-color);
+  display: block;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 8px 100px;
+  max-width: 75%;
+  text-align: center;
+}
+
+.heading-container {
+  padding: 40px 30px 0 70px;
+}
+
+.heading-information {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.motto-heading {
+  font-size: 18px;
+}
+
+.information {
+  font-size: 36px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.texting {
+  border-radius: 6px;
+  max-height: 500px;
+}
+
+.motto-container {
+  background: var(--branding-color);
+  color: var(--secondary-color);
+  margin: 10px auto;
+}
+
+/*    <video
+      id="people-walking-video"
+      class="video"
+      role="presentation"
+      crossorigin="anonymous"
+      playsinline=""
+      preload="auto"
+      loop=""
+      tabindex="-1"
+      autoplay="on"
+      src="https://video.wixstatic.com/video/11062b_838066ca4de44d6f93ecc01b260cb12e/720p/mp4/file.mp4"
+      style="
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+        opacity: 1;
+      "
+    ></video>
+    
+    <video id="time-lapse-city-video" class="video" role="presentation" crossorigin="anonymous" playsinline="" preload="auto" loop="" tabindex="-1" autoplay="on" src="https://video.wixstatic.com/video/11062b_e345dcd4a33f48ef901934544f0488c1/720p/mp4/file.mp4" style="height: 100%; width: 100%; object-fit: cover; object-position: center center; opacity: 1;"></video>*/
