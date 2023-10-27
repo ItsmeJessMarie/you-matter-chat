@@ -2,22 +2,46 @@
   --branding-color: #7641ab;
   --secondary-color: #ffffff;
   --tertiary-color: #ff4040;
-  --font-family: "Barlow", sans-serif;
+  --hover-color: #a75cf2;
+  --font-family: "Poppins", sans-serif;
 }
 
 body {
   font-family: var(--font-family);
-  background: rgba(118, 65, 171, 0.6);
-  margin: 145px 0 0;
+  background-color: var(--branding-color);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 h1 {
   color: var(--branding-color);
-  font-size: 56px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h2 {
+  color: var(--branding-color);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 28px;
+  text-align: center;
 }
 
 p {
+  font-size: 20px;
+  line-height: 1.5;
   margin: 0;
+}
+
+.logo-header {
+  margin: 10px 0 10px 100px;
+  max-height: 65px;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .navbar-nav .nav-link.active,
@@ -25,95 +49,283 @@ p {
   color: var(--branding-color);
 }
 
-.content-container {
-  background-color: var(--secondary-color);
-  margin: 0 auto;
-  width: 75%;
-}
-
 .navbar {
   background-color: var(--secondary-color);
   margin: 0;
-  padding: 10px 30px;
+  padding: 10px 100px 10px 0;
 }
 
 .nav-item {
   padding: 0 10px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 
 .navbar-collapse {
   display: flex;
   justify-content: right;
-}
-
-.logo {
-  margin: 10px;
+  text-align: right;
 }
 
 .warning {
   background: #edebeb;
+  margin: 100px 0 0 0;
 }
 
 .warning-text {
   color: var(--tertiary-color);
   display: block;
-  font-size: 20px;
+  font-size: 14px;
   margin: 0 auto;
-  padding: 8px 100px;
-  max-width: 75%;
+  padding: 10px;
+  text-align: center;
+  max-width: 800px;
+}
+
+.content-container {
+  background-color: var(--secondary-color);
+  display: block;
+  margin: 0 auto;
+  padding: 30px 40px;
+  width: 75%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.email-form {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.submit-btn {
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 50%;
+}
+
+.enter-email,
+.enter-email.active,
+.enter-email.focus,
+.enter-email:focus,
+.enter-email:active {
+  border-color: var(--branding-color);
+  font-size: 18px;
+  display: block;
+  margin: 5px auto;
+}
+
+.btn-primary {
+  background: var(--branding-color);
+  border-style: none;
+  color: var(--secondary-color);
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  transition: all 100ms ease-in-out;
+}
+
+.btn.btn-primary.active,
+.btn.btn-primary:active {
+  background: var(--branding-color);
+}
+
+.chat-btn,
+.donation-btn {
+  margin: 2px auto;
+  padding: 10px 60px;
+}
+
+.btn-primary:hover {
+  background: var(--hover-color);
+  color: black;
+}
+
+.fourth-container .col-md-6 {
+  padding: 0 30px;
+}
+
+.fourth-container .homepage-link {
+  color: var(--branding-color);
+}
+
+.fourth-container .homepage-link:hover {
+  color: var(--hover-color);
+}
+
+.social-media {
+  color: var(--branding-color);
+  font-size: 22px;
+  margin: 15px auto;
   text-align: center;
 }
 
-.heading-container {
-  padding: 40px 30px 0 70px;
+.social-media-icons {
+  text-align: center;
 }
 
-.heading-information {
-  font-size: 24px;
-  line-height: 1.4;
+.fa-brands {
+  color: var(--branding-color);
+  font-size: 22px;
+  padding: 0 20px;
 }
 
-.motto-heading {
-  font-size: 18px;
+.fa-brands:hover {
+  color: var(--hover-color);
 }
 
-.information {
-  font-size: 36px;
-  line-height: 1.4;
-  margin: 0;
-}
-
-.texting {
-  border-radius: 6px;
-  max-height: 500px;
-}
-
-.motto-container {
-  background: var(--branding-color);
+.fa-paypal {
   color: var(--secondary-color);
-  margin: 10px auto;
+  font-size: 20px;
+  padding: 0 5px;
 }
 
-/*    <video
-      id="people-walking-video"
-      class="video"
-      role="presentation"
-      crossorigin="anonymous"
-      playsinline=""
-      preload="auto"
-      loop=""
-      tabindex="-1"
-      autoplay="on"
-      src="https://video.wixstatic.com/video/11062b_838066ca4de44d6f93ecc01b260cb12e/720p/mp4/file.mp4"
-      style="
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: center center;
-        opacity: 1;
-      "
-    ></video>
-    
-    <video id="time-lapse-city-video" class="video" role="presentation" crossorigin="anonymous" playsinline="" preload="auto" loop="" tabindex="-1" autoplay="on" src="https://video.wixstatic.com/video/11062b_e345dcd4a33f48ef901934544f0488c1/720p/mp4/file.mp4" style="height: 100%; width: 100%; object-fit: cover; object-position: center center; opacity: 1;"></video>*/
+.fa-paypal:hover {
+  color: black;
+}
+
+.credit-cards {
+  font-size: 12px;
+}
+
+.copyright {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Breakpoints */
+@media (max-width: 1500px) {
+  .content-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .fourth-container .col-md-6 {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-container {
+    width: 90%;
+  }
+
+  .fourth-container .col-md-6 {
+    padding: 0;
+  }
+
+  .email-form {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .submit-btn {
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .col-md-4 {
+    padding: 0 5px;
+  }
+
+  .enter-email {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
+  .social-media,
+  .social-media-icons .fa-brands {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    padding: 20px 50px;
+    text-align: center;
+  }
+
+  .col-md-6,
+  .col-md-4 {
+    margin: 15px auto;
+  }
+
+  .image {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .warning-text {
+    font-size: 12px;
+  }
+
+  .content-container {
+    padding: 20px 30px;
+    width: 100%;
+  }
+
+  .col-md-6,
+  .col-md-4 {
+    margin: 15px auto;
+  }
+
+  .image {
+    width: 75%;
+  }
+
+  .logo-header {
+    margin: 10px 0 10px 50px;
+  }
+
+  .navbar {
+    padding: 10px 50px 10px 0;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}
