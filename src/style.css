@@ -14,30 +14,49 @@ body {
 
 h1 {
   color: var(--branding-color);
-  font-size: 40px;
+  font-size: 42px;
   font-weight: 600;
 }
 
 h2 {
   color: var(--branding-color);
-  font-size: 28px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 26px;
   text-align: center;
 }
 
+h4 {
+  font-size: 18px;
+}
+
 p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   margin: 0;
 }
 
+footer p {
+  font-size: 16px;
+}
+
+footer .homepage-link {
+  color: var(--branding-color);
+}
+
+footer .homepage-link:hover {
+  color: var(--hover-color);
+}
+
+footer .col-md-6 {
+  padding: 0 20px;
+}
+
 .logo-header {
-  margin: 10px 0 10px 100px;
-  max-height: 65px;
+  margin: 5px 0 5px 100px;
+  max-height: 70px;
 }
 
 a:link {
@@ -104,13 +123,13 @@ a:link {
 
 .email-form {
   margin: 0 auto;
-  width: 50%;
+  width: 60%;
 }
 
 .submit-btn {
   margin: 0 auto;
   padding: 10px 0;
-  width: 50%;
+  width: 40%;
 }
 
 .enter-email,
@@ -119,9 +138,10 @@ a:link {
 .enter-email:focus,
 .enter-email:active {
   border-color: var(--branding-color);
-  font-size: 18px;
+  font-size: 14px;
   display: block;
-  margin: 5px auto;
+  margin: 8px auto;
+  padding: 10px;
 }
 
 .btn-primary {
@@ -129,7 +149,7 @@ a:link {
   border-style: none;
   color: var(--secondary-color);
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   transition: all 100ms ease-in-out;
 }
@@ -140,7 +160,8 @@ a:link {
 }
 
 .chat-btn,
-.donation-btn {
+.donation-btn,
+.apply-btn {
   margin: 2px auto;
   padding: 10px 60px;
 }
@@ -148,18 +169,6 @@ a:link {
 .btn-primary:hover {
   background: var(--hover-color);
   color: black;
-}
-
-.fourth-container .col-md-6 {
-  padding: 0 30px;
-}
-
-.fourth-container .homepage-link {
-  color: var(--branding-color);
-}
-
-.fourth-container .homepage-link:hover {
-  color: var(--hover-color);
 }
 
 .social-media {
@@ -202,26 +211,22 @@ a:link {
   text-align: center;
 }
 
+.volunteer-requirements p {
+  margin-bottom: 20px;
+}
+
+.requirement-information h2 {
+  font-size: 22px;
+}
+
+.requirement-information p {
+  font-size: 16px;
+}
+
 /* Breakpoints */
 @media (max-width: 1500px) {
   .content-container {
     width: 80%;
-  }
-}
-
-@media (max-width: 1400px) {
-  .fourth-container .col-md-6 {
-    padding: 0 10px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .content-container {
-    width: 90%;
-  }
-
-  .fourth-container .col-md-6 {
-    padding: 0;
   }
 
   .email-form {
@@ -231,7 +236,20 @@ a:link {
 
   .submit-btn {
     margin: 0 auto;
+    padding: 10px 0;
     width: 50%;
+  }
+}
+
+@media (max-width: 1400px) {
+  footer .col-lg-6 {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-container {
+    width: 90%;
   }
 
   h1 {
@@ -264,12 +282,37 @@ a:link {
     font-size: 16px;
   }
 
-  .col-md-4 {
-    padding: 0 5px;
+  .content-container {
+    padding: 20px 50px;
+    text-align: center;
   }
 
-  .enter-email {
+  .col-lg-6,
+  .col-lg-4 {
+    margin: 15px auto;
+  }
+
+  .volunteer-requirements {
+    margin: 15px auto;
+  }
+
+  .volunteer-requirements p {
+    font-size: 16px;
+  }
+
+  .requirement-information p {
     font-size: 14px;
+  }
+
+  .email-form {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .submit-btn {
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 40%;
   }
 
   .btn {
@@ -280,18 +323,6 @@ a:link {
   .social-media-icons .fa-brands {
     font-size: 20px;
   }
-}
-
-@media (max-width: 768px) {
-  .content-container {
-    padding: 20px 50px;
-    text-align: center;
-  }
-
-  .col-md-6,
-  .col-md-4 {
-    margin: 15px auto;
-  }
 
   .image {
     width: 80%;
@@ -299,6 +330,10 @@ a:link {
 }
 
 @media (max-width: 576px) {
+  footer .col-lg-6 {
+    padding: 0 10px;
+  }
+
   .warning-text {
     font-size: 12px;
   }
@@ -306,15 +341,6 @@ a:link {
   .content-container {
     padding: 20px 30px;
     width: 100%;
-  }
-
-  .col-md-6,
-  .col-md-4 {
-    margin: 15px auto;
-  }
-
-  .image {
-    width: 75%;
   }
 
   .logo-header {
