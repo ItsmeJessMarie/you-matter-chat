@@ -16,6 +16,7 @@ h1 {
   color: var(--branding-color);
   font-size: 40px;
   font-weight: 600;
+  line-height: 1.4;
 }
 
 h2 {
@@ -24,12 +25,14 @@ h2 {
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 24px;
+  line-height: 1.4;
   text-align: center;
 }
 
 h4 {
   font-size: 18px;
+  line-height: 1.4;
 }
 
 p {
@@ -100,8 +103,8 @@ a:link {
   background-color: var(--secondary-color);
   display: block;
   margin: 0 auto;
-  padding: 10px 40px;
-  width: 75%;
+  padding: 10px 60px;
+  width: 80%;
 }
 
 .row {
@@ -114,12 +117,12 @@ a:link {
 .second-container,
 .third-container,
 .fourth-container {
-  margin: 20px 0 30px 0;
+  margin: 20px 0;
 }
 
 .image {
   display: block;
-  margin: 10px auto;
+  margin: 15px auto;
   width: 100%;
 }
 
@@ -131,8 +134,9 @@ a:link {
   color: var(--hover-color);
 }
 
-.fourth-container .col-lg-6 {
-  padding: 5px 20px;
+.donate-email-container {
+  margin: 0;
+  padding: 20px;
 }
 
 .email-form {
@@ -256,6 +260,14 @@ a:link {
   p {
     font-size: 18px;
   }
+
+  .email-form {
+    width: 80%;
+  }
+
+  .submit-btn {
+    width: 50%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -276,6 +288,7 @@ a:link {
   }
 
   .content-container {
+    padding: 10px 40px;
     text-align: center;
     width: 80%;
   }
@@ -284,11 +297,15 @@ a:link {
   .second-container,
   .third-container,
   .fourth-container {
-    margin: 10px 0 10px 0;
+    margin: 20px 0 0 0;
   }
 
-  .fourth-container .col-lg-6 {
+  .donate-email-container {
     padding: 0 40px;
+  }
+
+  .donate-email-container .col-lg-6 {
+    margin: 20px 0;
   }
 
   .volunteer-requirements p {
@@ -298,6 +315,7 @@ a:link {
   .requirement-information p {
     font-size: 14px;
   }
+
   .volunteer-requirements,
   .fundraising-information {
     text-align: left;
@@ -308,12 +326,10 @@ a:link {
   }
 
   .email-form {
-    margin: 0 auto;
-    width: 60%;
+    width: 70%;
   }
 
   .submit-btn {
-    margin: 0 auto;
     width: 40%;
   }
 
@@ -327,7 +343,7 @@ a:link {
 }
 
 @media (max-width: 576px) {
-  .fourth-container .col-lg-6 {
+  .donate-email-container {
     padding: 0 20px;
   }
 
@@ -340,20 +356,19 @@ a:link {
   }
 
   .content-container {
-    padding: 10px 30px;
+    padding: 10px 20px;
     width: 100%;
   }
 
   .logo-header {
-    margin: 10px 0 10px 50px;
+    margin: 10px 0 10px 20px;
   }
 
   .navbar {
-    padding: 10px 50px 10px 0;
+    padding: 10px 20px 10px 0;
   }
 
   .email-form {
-    margin: 0 auto;
     width: 80%;
   }
 
@@ -362,6 +377,6 @@ a:link {
   }
 
   .copyright {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
