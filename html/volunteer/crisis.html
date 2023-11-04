@@ -71,33 +71,40 @@
                   class="nav-link dropdown-toggle active"
                   href="/html/volunteer/crisis.html"
                   id="navbarDropdownMenuLink"
-                  data-toggle="dropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
                   title="Volunteer"
                 >
                   Volunteer
                 </a>
-                <div
+                <ul
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <a
-                    class="dropdown-item active"
-                    href="/html/volunteer/crisis.html"
-                    >Crisis Volunteer</a
-                  >
-                  <a
-                    class="dropdown-item"
-                    href="/html/volunteer/fundraising.html"
-                    >Fundraising Volunteer</a
-                  >
-                  <a
-                    class="dropdown-item"
-                    href="/html/volunteer/social-media.html"
-                    >Social/Digital Media Volunteer</a
-                  >
-                </div>
+                  <li>
+                    <a
+                      class="dropdown-item active"
+                      href="/html/volunteer/crisis.html"
+                      >Crisis Volunteer</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/html/volunteer/fundraising.html"
+                      >Fundraising Volunteer</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/html/volunteer/social-media.html"
+                      >Social/Digital Media Volunteer</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a
@@ -128,7 +135,7 @@
     </header>
     <div class="content-container">
       <main>
-        <section class="first-container mb-lg-4">
+        <section class="first-container">
           <div class="row">
             <div class="col-lg-6">
               <h1>
@@ -154,7 +161,7 @@
             </div>
           </div>
         </section>
-        <section class="second-container volunteer-requirements mb-lg-4">
+        <section class="second-container volunteer-requirements">
           <h2>Checklist to become a superhero...</h2>
           <p>
             Please read through each point to make sure you fully understand
@@ -228,7 +235,7 @@
             </p>
           </div>
         </section>
-        <section class="third-container mb-lg-5">
+        <section class="third-container">
           <div class="row">
             <div class="col-lg-6">
               <img
@@ -249,77 +256,36 @@
                 process as Responders; you can indicate on your application that
                 you are interested in taking on a Supervisory role.
               </p>
-              <br />
-              <h3 class="mt-3">Are you ready to apply?</h3>
-              <p class="mb-2 text-center">
-                Click below to start our application process.
-              </p>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSc5KOIzINT1IX0T9pRX9p8srVPi21C4x1jFnTGsVsgN_d7S7g/viewform"
-                target="_blank"
-                class="apply-link"
-                ><button
-                  class="btn btn-primary apply-btn"
-                  title="Apply Now button"
-                >
-                  Apply Now
-                </button></a
-              >
             </div>
           </div>
         </section>
-        <section class="fourth-container mb-lg-5"></section>
+        <section class="fourth-container apply-requirements">
+          <div class="text-center">
+            <h2>Are you ready to apply?</h2>
+            <p class="mb-2">
+              It's important that you have read through all the requirements
+              above and understand what is expected from you and what the
+              onboarding process may look like. If you are ready to submit an
+              application, click below to start our application process. If you
+              have any questions, please don't hesitate to contact us.
+            </p>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc5KOIzINT1IX0T9pRX9p8srVPi21C4x1jFnTGsVsgN_d7S7g/viewform"
+              target="_blank"
+              class="apply-link"
+            >
+              <button
+                class="btn btn-primary apply-btn"
+                title="Apply Now button"
+              >
+                Apply Now
+              </button></a
+            >
+          </div>
+        </section>
       </main>
       <footer>
         <section class="footer-container">
-          <hr />
-          <div class="row text-center">
-            <div class="col-lg-6">
-              <p>
-                <a class="homepage-link" href="/html/index.html">YouMatter</a>
-                is an international non-profit, registered and regulated in New
-                Jersey, USA.
-              </p>
-              <a
-                href="https://www.powr.io/checkout_screen?unique_label=f036cad8_1696581325"
-                target="_blank"
-                class="donation-link"
-                ><button
-                  class="btn btn-primary donation-btn"
-                  title="Donation button"
-                >
-                  <i class="fa-brands fa-paypal"></i>
-                  Donate
-                </button></a
-              >
-              <p class="credit-cards">All major forms of payment accepted</p>
-            </div>
-            <div class="col-lg-6">
-              <form class="mailing-form" id="mailing-form">
-                <p>
-                  Want to receive updates about YouMatter? Join our mailing
-                  list:
-                </p>
-                <div class="email-form">
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    autocomplete="off"
-                    id="email-input"
-                    class="form-control enter-email shadow-sm"
-                    title="Email input form"
-                  />
-                  <input
-                    type="submit"
-                    value="Submit"
-                    id="submit-input"
-                    class="form-control btn submit-btn btn-primary shadow-sm"
-                    title="Submit email button"
-                  />
-                </div>
-              </form>
-            </div>
-          </div>
           <p class="social-media">Visit us on our social media platforms</p>
           <div class="social-media-icons">
             <span

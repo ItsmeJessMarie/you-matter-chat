@@ -14,7 +14,7 @@ body {
 
 h1 {
   color: var(--branding-color);
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 600;
 }
 
@@ -42,25 +42,13 @@ footer p {
   font-size: 16px;
 }
 
-footer .homepage-link {
-  color: var(--branding-color);
-}
-
-footer .homepage-link:hover {
-  color: var(--hover-color);
-}
-
-footer .col-md-6 {
-  padding: 0 20px;
+a:link {
+  text-decoration: none;
 }
 
 .logo-header {
   margin: 5px 0 5px 100px;
   max-height: 70px;
-}
-
-a:link {
-  text-decoration: none;
 }
 
 .navbar-nav .nav-link.active,
@@ -86,6 +74,13 @@ a:link {
   text-align: right;
 }
 
+.dropdown-item .active,
+.dropdown-item .focus,
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: var(--branding-color);
+}
+
 .warning {
   background: #edebeb;
   margin: 100px 0 0 0;
@@ -105,7 +100,7 @@ a:link {
   background-color: var(--secondary-color);
   display: block;
   margin: 0 auto;
-  padding: 30px 40px;
+  padding: 10px 40px;
   width: 75%;
 }
 
@@ -115,10 +110,29 @@ a:link {
   flex-wrap: wrap;
 }
 
+.first-container,
+.second-container,
+.third-container,
+.fourth-container {
+  margin: 20px 0 30px 0;
+}
+
 .image {
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
   width: 100%;
+}
+
+.fourth-container .homepage-link {
+  color: var(--branding-color);
+}
+
+.fourth-container .homepage-link:hover {
+  color: var(--hover-color);
+}
+
+.fourth-container .col-lg-6 {
+  padding: 5px 20px;
 }
 
 .email-form {
@@ -127,6 +141,7 @@ a:link {
 }
 
 .submit-btn {
+  display: inline;
   margin: 0 auto;
   padding: 10px 0;
   width: 40%;
@@ -159,9 +174,10 @@ a:link {
   background: var(--branding-color);
 }
 
-.chat-btn,
 .donation-btn,
+.chat-btn,
 .apply-btn {
+  display: inline;
   margin: 2px auto;
   padding: 10px 60px;
 }
@@ -173,8 +189,8 @@ a:link {
 
 .social-media {
   color: var(--branding-color);
-  font-size: 22px;
-  margin: 15px auto;
+  font-size: 20px;
+  margin: 20px 0 10px 0;
   text-align: center;
 }
 
@@ -194,8 +210,8 @@ a:link {
 
 .fa-paypal {
   color: var(--secondary-color);
-  font-size: 20px;
-  padding: 0 5px;
+  font-size: 18px;
+  padding: 0 2px;
 }
 
 .fa-paypal:hover {
@@ -203,7 +219,7 @@ a:link {
 }
 
 .credit-cards {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .copyright {
@@ -223,35 +239,12 @@ a:link {
   font-size: 16px;
 }
 
+.apply-requirements p {
+  margin: 0 100px;
+}
+
 /* Breakpoints */
-@media (max-width: 1500px) {
-  .content-container {
-    width: 80%;
-  }
-
-  .email-form {
-    margin: 0 auto;
-    width: 75%;
-  }
-
-  .submit-btn {
-    margin: 0 auto;
-    padding: 10px 0;
-    width: 50%;
-  }
-}
-
-@media (max-width: 1400px) {
-  footer .col-lg-6 {
-    padding: 0 20px;
-  }
-}
-
 @media (max-width: 1200px) {
-  .content-container {
-    width: 90%;
-  }
-
   h1 {
     font-size: 36px;
   }
@@ -283,17 +276,19 @@ a:link {
   }
 
   .content-container {
-    padding: 20px 50px;
     text-align: center;
+    width: 80%;
   }
 
-  .col-lg-6,
-  .col-lg-4 {
-    margin: 15px auto;
+  .first-container,
+  .second-container,
+  .third-container,
+  .fourth-container {
+    margin: 10px 0 10px 0;
   }
 
-  .volunteer-requirements {
-    margin: 15px auto;
+  .fourth-container .col-lg-6 {
+    padding: 0 40px;
   }
 
   .volunteer-requirements p {
@@ -303,35 +298,41 @@ a:link {
   .requirement-information p {
     font-size: 14px;
   }
+  .volunteer-requirements,
+  .fundraising-information {
+    text-align: left;
+  }
+
+  .apply-requirements p {
+    margin: 0 auto;
+  }
 
   .email-form {
     margin: 0 auto;
-    width: 80%;
+    width: 60%;
   }
 
   .submit-btn {
     margin: 0 auto;
-    padding: 10px 0;
     width: 40%;
-  }
-
-  .btn {
-    font-size: 14px;
-  }
-
-  .social-media,
-  .social-media-icons .fa-brands {
-    font-size: 20px;
   }
 
   .image {
     width: 80%;
   }
+
+  .btn {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 576px) {
-  footer .col-lg-6 {
-    padding: 0 10px;
+  .fourth-container .col-lg-6 {
+    padding: 0 20px;
+  }
+
+  .warning {
+    margin: 110px 0 0 0;
   }
 
   .warning-text {
@@ -339,7 +340,7 @@ a:link {
   }
 
   .content-container {
-    padding: 20px 30px;
+    padding: 10px 30px;
     width: 100%;
   }
 
@@ -349,6 +350,15 @@ a:link {
 
   .navbar {
     padding: 10px 50px 10px 0;
+  }
+
+  .email-form {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .submit-btn {
+    width: 50%;
   }
 
   .copyright {
