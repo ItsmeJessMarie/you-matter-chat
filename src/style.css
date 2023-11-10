@@ -82,7 +82,8 @@ a:link {
 .dropdown-item.focus,
 .dropdown-item:focus,
 .dropdown-item:hover {
-  background-color: var(--hover-color);
+  background-color: var(--secondary-color);
+  color: var(--branding-color);
 }
 
 .warning {
@@ -146,7 +147,6 @@ a:link {
 }
 
 .submit-btn {
-  display: inline;
   margin: 0 auto;
   padding: 10px 0;
   width: 40%;
@@ -161,7 +161,6 @@ a:link {
 .enter-email.focus,
 .enter-email:focus,
 .enter-email:active {
-  border-color: var(--branding-color);
   font-size: 14px;
   display: block;
   margin: 8px auto;
@@ -252,6 +251,16 @@ a:link {
   margin: 0 100px;
 }
 
+.contact-us {
+  text-align: center;
+}
+
+.contact-us,
+.contact-us-form {
+  margin: 30px auto;
+  width: 50%;
+}
+
 /* Breakpoints */
 @media (max-width: 1500px) {
   h1 {
@@ -292,8 +301,14 @@ a:link {
     width: 80%;
   }
 
-  .submit-btn {
+  .submit-btn,
+  .message-btn {
     width: 50%;
+  }
+
+  .contact-us,
+  .contact-us-form {
+    width: 60%;
   }
 }
 
@@ -340,7 +355,8 @@ a:link {
   }
 
   .volunteer-requirements,
-  .fundraising-information {
+  .fundraising-information,
+  .contact-us-information {
     text-align: left;
   }
 
@@ -352,7 +368,13 @@ a:link {
     width: 70%;
   }
 
-  .submit-btn {
+  .contact-us,
+  .contact-us-form {
+    width: 100%;
+  }
+
+  .submit-btn,
+  .message-btn {
     width: 40%;
   }
 

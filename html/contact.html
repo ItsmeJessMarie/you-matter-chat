@@ -106,19 +106,19 @@
               </li>
               <li class="nav-item">
                 <a
+                  class="nav-link active"
+                  href="/html/contact.html"
+                  title="Contact us"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
                   class="nav-link"
                   href="https://www.powr.io/checkout_screen?unique_label=f036cad8_1696581325"
                   target="_blank"
                   title="Donate"
                   >Donate</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  href="/html/contact.html"
-                  title="Contact us"
-                  >Contact</a
                 >
               </li>
             </ul>
@@ -136,9 +136,9 @@
     </header>
     <div class="content-container">
       <main>
-        <section class="first-container">
+        <section class="first-container contact-us">
           <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg">
               <h1>Get in touch!</h1>
               <h4 class="contact-warning">
                 Please note, we are unable to provide crisis support via email.
@@ -150,7 +150,9 @@
                 form below to reach out to our team.
               </p>
             </div>
-            <div class="col-lg-5 d-none d-lg-block">
+          </div>
+          <div class="row">
+            <div class="col-lg">
               <img
                 src="/images/contact.jpg"
                 class="contact image img-fluid rounded shadow-sm"
@@ -160,9 +162,103 @@
             </div>
           </div>
         </section>
-        <section class="second-container fundraising-information">
-          <h2>Contact Us</h2>
-          <form></form>
+        <section class="second-container contact-us-form">
+          <h2 class="mb-3">Contact Us</h2>
+          <div class="message-form">
+            <form class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-lg-6 mb-3">
+                  <label for="validationFirstName">First name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationFirstName"
+                    title="First name input form"
+                    placeholder=""
+                    value=""
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <label for="validationLastName">Last name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationLastName"
+                    title="Last name input form"
+                    placeholder=""
+                    value=""
+                    required
+                  />
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 mb-3">
+                  <label for="validationCustomEmail">Email</label>
+                  <input
+                    type="email"
+                    class="form-control enter-contact-email"
+                    id="email-input"
+                    title="Email input form"
+                    placeholder=""
+                    autocomplete="off"
+                    value=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter an a valid email.
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <label for="validationCustomPhone">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control enter-contact-telephone"
+                    id="telephone-input"
+                    title="Telephone input form"
+                    placeholder=""
+                    autocomplete="off"
+                    value=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter an a valid phone number.
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg mb-3">
+                  <label for="validationCustomMessage">Message</label>
+                  <textarea
+                    class="form-control enter-message"
+                    id="message-input"
+                    title="Message input form"
+                    placeholder=""
+                    autocomplete="off"
+                    rows="3"
+                    value=""
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">
+                    Please write a valid response.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg mb-3">
+                <button
+                  type="submit"
+                  value="submit"
+                  id="submit-message"
+                  class="form-control btn submit-btn btn-primary message-btn shadow-sm"
+                  title="Submit message button"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
         </section>
       </main>
       <footer>
