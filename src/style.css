@@ -197,7 +197,7 @@ a:link {
 
 .social-media {
   color: var(--branding-color);
-  font-size: 20px;
+  font-size: 18px;
   margin: 20px 0 10px 0;
   text-align: center;
 }
@@ -237,14 +237,6 @@ a:link {
 
 .volunteer-requirements p {
   margin-bottom: 20px;
-}
-
-.requirement-information h2 {
-  font-size: 22px;
-}
-
-.requirement-information p {
-  font-size: 16px;
 }
 
 .apply-requirements p {
@@ -346,14 +338,6 @@ a:link {
     margin: 20px 0;
   }
 
-  .volunteer-requirements p {
-    font-size: 16px;
-  }
-
-  .requirement-information p {
-    font-size: 14px;
-  }
-
   .volunteer-requirements,
   .fundraising-information,
   .contact-us-information {
@@ -423,5 +407,38 @@ a:link {
 
   .copyright {
     font-size: 11px;
+  }
+}
+
+@media (max-width: 300px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .navbar-collapse {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+  }
+
+  .nav-item,
+  .dropdown-item {
+    font-size: 12px;
   }
 }
