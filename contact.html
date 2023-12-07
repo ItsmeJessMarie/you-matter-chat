@@ -154,85 +154,86 @@
         <section class="second-container contact-us-form">
           <h2 class="mb-3">Contact Us</h2>
           <div class="message-form">
-            <form class="needs-validation" novalidate>
+            <form
+              class="needs-validation"
+              novalidate
+              id="contact-form"
+              method="post"
+              action="sendmail.php"
+            >
               <div class="row">
                 <div class="col-lg-6 mb-3">
-                  <label for="validationFirstName">First name</label>
+                  <label for="first-name">First name</label>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control text-box shadow-sm"
                     id="validationFirstName"
                     title="First name input form"
+                    name="first-name"
                     placeholder=""
                     value=""
-                    required
+                    required=""
                   />
                   <div class="valid-feedback">Looks good!</div>
                 </div>
                 <div class="col-lg-6 mb-3">
-                  <label for="validationLastName">Last name</label>
+                  <label for="last-name">Last name</label>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control text-box shadow-sm"
                     id="validationLastName"
                     title="Last name input form"
+                    name="last-name"
                     placeholder=""
                     value=""
-                    required
+                    required=""
                   />
-                  <div class="valid-feedback">Looks good!</div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-6 mb-3">
-                  <label for="validationCustomEmail">Email</label>
+                  <label for="email">Email</label>
                   <input
                     type="email"
-                    class="form-control enter-contact-email"
+                    class="form-control enter-contact-email text-box shadow-sm"
                     id="email-input"
                     title="Email input form"
+                    name="email"
                     placeholder=""
                     autocomplete="off"
                     value=""
-                    required
+                    required=""
                   />
-                  <div class="invalid-feedback">
-                    Please enter an a valid email.
-                  </div>
                 </div>
                 <div class="col-lg-6 mb-3">
-                  <label for="validationCustomPhone">Phone</label>
+                  <label for="phone">Phone</label>
                   <input
                     type="tel"
-                    class="form-control enter-contact-telephone"
+                    class="form-control enter-contact-telephone text-box shadow-sm"
                     id="telephone-input"
                     title="Telephone input form"
+                    name="phone"
                     placeholder=""
                     autocomplete="off"
                     value=""
-                    required
+                    required=""
                   />
-                  <div class="invalid-feedback">
-                    Please enter an a valid phone number.
-                  </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg mb-3">
-                  <label for="validationCustomMessage">Message</label>
+                  <label for="message">Message</label>
                   <textarea
-                    class="form-control enter-message"
+                    class="form-control enter-contact-telephone text-box shadow-sm"
                     id="message-input"
                     title="Message input form"
+                    name="message"
                     placeholder=""
                     autocomplete="off"
                     rows="3"
                     value=""
-                    required
+                    required=""
                   ></textarea>
-                  <div class="invalid-feedback">
-                    Please write a valid response.
-                  </div>
                 </div>
               </div>
               <div class="col-lg mb-3">

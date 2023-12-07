@@ -161,9 +161,17 @@ a:link {
 .enter-email.focus,
 .enter-email:focus,
 .enter-email:active {
-  font-size: 14px;
   display: block;
+  font-size: 14px;
   margin: 8px auto;
+  padding: 10px;
+}
+
+.text-box:focus {
+  border-color: var(--branding-color);
+}
+
+.text-box {
   padding: 10px;
 }
 
@@ -249,7 +257,7 @@ a:link {
 
 .contact-us,
 .contact-us-form {
-  margin: 30px auto;
+  margin: 0 auto;
   width: 50%;
 }
 
@@ -269,6 +277,11 @@ a:link {
 
   p {
     font-size: 18px;
+  }
+
+  .contact-us,
+  .contact-us-form {
+    width: 60%;
   }
 }
 
@@ -300,7 +313,7 @@ a:link {
 
   .contact-us,
   .contact-us-form {
-    width: 60%;
+    width: 75%;
   }
 }
 
@@ -352,9 +365,13 @@ a:link {
     width: 70%;
   }
 
-  .contact-us,
+  .contact-us {
+    margin: 0 auto;
+  }
+
   .contact-us-form {
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
   }
 
   .submit-btn,
@@ -368,6 +385,10 @@ a:link {
 
   .btn {
     font-size: 14px;
+  }
+
+  .text-box {
+    text-align: center;
   }
 }
 
