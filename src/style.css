@@ -55,6 +55,7 @@ a:link {
 }
 
 .navbar-nav .nav-link.active,
+.navbar-nav .nav-link:active,
 .nav-link:hover {
   color: var(--branding-color);
 }
@@ -75,6 +76,11 @@ a:link {
   display: flex;
   justify-content: right;
   text-align: right;
+}
+
+.navbar-toggler {
+  border-style: none;
+  --bs-navbar-toggler-focus-width: 0;
 }
 
 .dropdown-item.active,
@@ -122,34 +128,41 @@ a:link {
   margin: 30px 0;
 }
 
+.footer-container {
+  margin: 30px 0 10px 0;
+}
+
 .image {
   display: block;
   margin: 15px auto;
   width: 100%;
 }
 
-.fourth-container .homepage-link {
+.footer-container .homepage-link {
   color: var(--branding-color);
 }
 
-.fourth-container .homepage-link:hover {
+.footer-container .homepage-link:hover {
   color: var(--hover-color);
 }
 
 .donate-email-container {
-  margin: 0;
-  padding: 20px;
+  margin: 0 auto;
+}
+
+.mailing-form {
+  text-align: center;
 }
 
 .email-form {
   margin: 0 auto;
-  width: 60%;
+  width: 325px;
 }
 
 .submit-btn {
   margin: 0 auto;
-  padding: 10px 0;
-  width: 40%;
+  padding: 12px 5px;
+  width: 125px;
 }
 
 .contact-warning {
@@ -161,10 +174,12 @@ a:link {
 .enter-email.focus,
 .enter-email:focus,
 .enter-email:active {
+  border-radius: 30px;
   display: block;
   font-size: 14px;
   margin: 8px auto;
   padding: 10px;
+  text-align: center;
 }
 
 .text-box:focus {
@@ -177,10 +192,11 @@ a:link {
 
 .btn-primary {
   background: var(--branding-color);
+  border-radius: 30px;
   border-style: none;
   color: var(--secondary-color);
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   transition: all 100ms ease-in-out;
 }
@@ -191,23 +207,22 @@ a:link {
 }
 
 .donation-btn,
-.chat-btn,
 .apply-btn {
   display: inline;
-  margin: 2px auto;
-  padding: 10px 60px;
+  padding: 12px 25px;
+}
+
+.contact-email {
+  margin: 20px 0;
+}
+
+.message-btn {
+  margin: 0 auto;
 }
 
 .btn-primary:hover {
   background: var(--hover-color);
   color: black;
-}
-
-.social-media {
-  color: var(--branding-color);
-  font-size: 18px;
-  margin: 20px 0 10px 0;
-  text-align: center;
 }
 
 .social-media-icons {
@@ -227,7 +242,7 @@ a:link {
 .fa-paypal {
   color: var(--secondary-color);
   font-size: 18px;
-  padding: 0 2px;
+  padding: 0 4px;
 }
 
 .fa-paypal:hover {
@@ -236,6 +251,7 @@ a:link {
 
 .credit-cards {
   font-size: 11px;
+  padding-top: 2px;
 }
 
 .copyright {
@@ -252,13 +268,14 @@ a:link {
 }
 
 .contact-us {
+  margin: 10px auto;
   text-align: center;
+  width: 550px;
 }
 
-.contact-us,
 .contact-us-form {
   margin: 0 auto;
-  width: 50%;
+  width: 550px;
 }
 
 /* Breakpoints */
@@ -302,15 +319,6 @@ a:link {
     font-size: 16px;
   }
 
-  .email-form {
-    width: 80%;
-  }
-
-  .submit-btn,
-  .message-btn {
-    width: 50%;
-  }
-
   .contact-us,
   .contact-us-form {
     width: 75%;
@@ -333,22 +341,23 @@ a:link {
   .content-container {
     padding: 10px 40px;
     text-align: center;
-    width: 80%;
+    width: 100%;
   }
 
   .first-container,
   .second-container,
   .third-container,
-  .fourth-container {
+  .fourth-container,
+  .footer-container {
     margin: 20px 0 0 0;
   }
 
   .donate-email-container {
-    padding: 0 40px;
+    padding: 0 30px;
   }
 
-  .donate-email-container .col-lg-6 {
-    margin: 20px 0;
+  .mailing-form {
+    padding: 20px 0;
   }
 
   .volunteer-requirements,
@@ -361,12 +370,8 @@ a:link {
     margin: 0 auto;
   }
 
-  .email-form {
-    width: 70%;
-  }
-
   .contact-us {
-    margin: 0 auto;
+    margin: 10px auto;
   }
 
   .contact-us-form {
@@ -374,27 +379,20 @@ a:link {
     width: 80%;
   }
 
-  .submit-btn,
-  .message-btn {
-    width: 40%;
-  }
-
   .image {
     width: 80%;
   }
+}
 
-  .btn {
-    font-size: 14px;
-  }
-
-  .text-box {
-    text-align: center;
+@media (max-width: 768px) {
+  .email-form {
+    width: 300px;
   }
 }
 
 @media (max-width: 576px) {
   .donate-email-container {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   .warning {
@@ -407,7 +405,6 @@ a:link {
 
   .content-container {
     padding: 10px 20px;
-    width: 100%;
   }
 
   .logo-header {
@@ -419,11 +416,7 @@ a:link {
   }
 
   .email-form {
-    width: 80%;
-  }
-
-  .submit-btn {
-    width: 50%;
+    width: 100%;
   }
 
   .copyright {
@@ -461,5 +454,9 @@ a:link {
   .nav-item,
   .dropdown-item {
     font-size: 12px;
+  }
+
+  .email-form {
+    width: 100%;
   }
 }
